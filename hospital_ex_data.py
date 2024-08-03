@@ -1,5 +1,6 @@
 import pandas as pd
 
+# hospital
 # xlsx 파일읽기
 file_path = 'C:/Users/USER-PC/Downloads/전국 병의원 및 약국 현황 2024.6/1.병원정보서비스 2024.6.xlsx'
 df = pd.read_excel(file_path)
@@ -14,5 +15,3 @@ df_selected.columns = ['hospital_id', 'hospital_name', 'typecode', 'typecode_nam
 # CSV 파일로 저장
 output_file_path = 'C:/Users/USER-PC/Downloads/hospital_selected.csv'
 df_selected.to_csv(output_file_path, index=False)
-
-output_file_path
